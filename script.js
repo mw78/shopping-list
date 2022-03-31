@@ -16,6 +16,7 @@ function handleItemForm(event, formRef) {
     }
     //console.log("Event: ", event);
     let itemHtml = addItemToShoppingList();
+    console.log("Item HTML: ", itemHtml);
     let itemListRef = document.getElementById("shopping-list");
     itemListRef.insertAdjacentHTML("afterend", itemHtml);
 

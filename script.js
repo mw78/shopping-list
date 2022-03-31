@@ -14,7 +14,7 @@ function handleItemForm(event, formRef) {
     if(event.preventDefault) {
        event.preventDefault();
     }
-    //console.log("Event: ", event);
+    console.log("Event: ", event);
 
 
     return false;

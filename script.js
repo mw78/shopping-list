@@ -16,7 +16,6 @@ function handleItemForm(event, formRef) {
     }
     console.log("Event: ", event);
 
-
     return false;
 }
 
@@ -25,7 +24,7 @@ function addItemToShoppingList() {
     let itemAmount = document.getElementById("item-amount");
     let id = getRandomInt(0, 10000000);
 
-    // Creates list item html and appends to page.
+    // Creates list item html and appends to page:
     let itemHtml = createListItemHtml(itemName.value, itemAmount.value, id);
     console.log("Item HTML: ", itemHtml);
     let itemListRef = document.getElementById("shopping-list");
@@ -46,7 +45,7 @@ function createListItemHtml(itemName, itemAmount, id) {
     return `<li id="item${id}">
                 ${itemName} - ${itemAmount}
                 <button id="button${id}" type="button">Delete Item</button>
-             </li>`;
+            </li>`;
 }
 
 function removeListItem(id) {
@@ -54,9 +53,9 @@ function removeListItem(id) {
     listItem.parentNode.removeChild(listItem);
 }
 
-
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min; //
 }
+

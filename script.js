@@ -30,6 +30,9 @@ function addItemToShoppingList() {
     console.log("Item HTML: ", itemHtml);
     let itemListRef = document.getElementById("shopping-list");
     itemListRef.insertAdjacentHTML("afterend", itemHtml);
+
+    setDeleteButtonEvent(id);
+
 }
 
 function setDeleteButtonEvent(id) {
